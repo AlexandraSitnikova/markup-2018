@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'Lato-Medium';
+  src: url(../fonts/Lato-Medium.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  height: 2000px;
+  margin: 0;
+}
+
+header {
+  background-image: url(../images/header/headerBG.png);
+  height: 600px;
+}
+
+.width-limiter {
+  max-width: 1100px;
+}
+
+.place-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.logo-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  height: 80px;
+  margin: 0 auto;
+  border-bottom: 2px solid #a7a5a58f;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation li {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.navigation a {
+
+  color: #f8eeee;
+  text-decoration: none;
+  font-family: 'Lato-Medium', sans-serif;
+}
+
+.greeting-box {
+  color: #f8eeee;
+  height: 100%;
+  flex-direction: column;
+}
+
+.greeting-box p {
+  margin: 0;
+}
+
+.greeting-title {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Lato-Medium', sans-serif;
+  margin: 15px;
+}
+
+.greeting-text {
+  font-size: 1.7rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.account-stripe {
+  height: 110px;
+  position: relative;
+}
+
+.account-block {
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+}
+
+.account-button {
+  height: 100%;
+}
+
+.account-block a {
+  height: 100%;
+  width: 100%;
+}
+
+.left-stripe {
+  background: #21424b;
+  height: 100%;
+  width: calc(50% - 25px);
+}
+
+.right-stripe {
+  background: #21424b;
+  height: 100%;
+  width: calc(50% + 25px);
+  border-bottom: 110px solid #2fab6c;
+  border-left: 50px solid transparent;
+  border-right: 0;
+  height: 0;
+}
