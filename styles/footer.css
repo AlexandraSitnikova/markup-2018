@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Lato-Medium';
+    src: url(../fonts/Lato-Medium.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+footer {
+    flex: 0 0 auto;
+    background: #2a2a2a;
+}
+
+.logo-nav-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin: 0 auto;
+    border-bottom: 2px solid #a7a5a58f;
+}
+
+.logo-footer {
+    opacity: 0.3;
+}
+
+.navigation-footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  
+.navigation-footer li {
+    display: inline-block;
+    margin-left: 50px;
+}
+  
+.navigation-footer a {
+
+    text-decoration: none;
+    font-family: 'Lato-Medium', sans-serif;
+    font-size: 10pt;
+}
+
+.navigation-footer a:hover {
+    color: rgba(255, 255, 255, 255);
+} 
+
+.footer-info {
+    margin: 0 auto;
+}
+
+.text-info, .options, .contacts {
+    max-width: 350px;
+}
+
+.options {
+    display: flex;
+}
+
