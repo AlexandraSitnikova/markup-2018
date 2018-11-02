@@ -8,6 +8,14 @@
 footer {
     flex: 0 0 auto;
     background: #2a2a2a;
+    font-family: 'Lato-Medium', sans-serif;
+    font-size: 14px;
+}
+
+footer a {
+    color: #646464;
+    text-decoration: none;
+    font-family: 'Lato-Medium', sans-serif;
 }
 
 .logo-nav-footer {
@@ -15,8 +23,8 @@ footer {
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    margin: 0 auto;
-    border-bottom: 2px solid #a7a5a58f;
+    margin: 5px auto;
+    border-bottom: 1px solid #a7a5a58f;
 }
 
 .logo-footer {
@@ -35,25 +43,62 @@ footer {
 }
   
 .navigation-footer a {
-
-    text-decoration: none;
-    font-family: 'Lato-Medium', sans-serif;
     font-size: 10pt;
 }
 
 .navigation-footer a:hover {
-    color: rgba(255, 255, 255, 255);
+    color: rgb(255, 255, 255);
 } 
 
+
+.designer-name {
+    font-weight: bold;
+}
+
 .footer-info {
-    margin: 0 auto;
+    margin: 23px auto;
+}
+
+.footer-info hr {
+    align-self: stretch;
+    border-color: #646464;
+    border-style: solid;
 }
 
 .text-info, .options, .contacts {
     max-width: 350px;
+    color: #646464;
 }
 
 .options {
     display: flex;
 }
+
+.options ul, .contacts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.options a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.options nav:first-child {
+    margin-right: 15px;
+}
+
+.foot-nav li{
+    margin: 8px;
+}
+
+.foot-nav li:hover{
+    color: rgb(255, 255, 255);
+}
+
+.footer-bullet {
+    font-size: 11px;
+    margin-right: 3px;
+}
+
+
 
