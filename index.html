@@ -2,12 +2,11 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" 
-  integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" 
-  crossorigin="anonymous">
   <link href="./styles/header.css" rel="stylesheet">
   <link href="./styles/footer.css" rel="stylesheet">
   <link href="./styles/main.css" rel="stylesheet">
+  <link href="./styles/font-face.css" rel="stylesheet">
+  <link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ghost host</title>
@@ -19,6 +18,7 @@
       <div class="header-container">
         <div class="logo-nav width-limiter">
           <img src="./images/header/logo.png" alt="logo" class="logo" />
+          <i class="fas fa-bars burger"></i>
           <nav class="navigation">
             <ul>
               <li><a href="#">Home</a></li>
@@ -30,7 +30,7 @@
             </ul>
           </nav>
         </div>
-  
+
         <div class="greeting-box place-center">
           <div class="greeting-title">
             <p>HELLO!</p>
@@ -41,21 +41,21 @@
           </div>
         </div>
       </div>
-  
+
       <div class="account-stripe place-center">
         <div class="left-stripe"></div>
         <div class="right-stripe"></div>
         <div class="account-block width-limiter">
-            <div class="account-button place-center"><a href="#" id="login-button">LOGIN</a></div>
-            <div class="account-button place-center"><a href="#" id="register-button">REGISTER</a></div>
+          <div class="account-button place-center"><a href="#" id="login-button">LOGIN</a></div>
+          <div class="account-button place-center"><a href="#" id="register-button">REGISTER</a></div>
         </div>
       </div>
     </header>
-    
+
     <main>
       <div class="buy-domain">
         <p>Would you like to buy a new domain ?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Suspendisse auctor mauris ac nulla interdum, id molestier.</p>
         <div class="domain-bar">
           <span>www.</span>
@@ -67,145 +67,259 @@
           </select>
         </div>
 
-        <table class="table-domain">
-          <tr>
-            <td>.COM</td>
-            <td>1 Year</td>
-            <td>$9.00 USD</td>
-            <td>Transfer Price No</td>
-          </tr>
-          <tr class="table-domain-second-row">
-            <td>.NET</td>
-            <td>1 Year</td>
-            <td>$9.00 USD</td>
-            <td>Transfer Price No</td>
-          </tr>
-        </table>
+        <div class="table-domain-container">
+          <table class="table-domain">
+            <tr>
+              <td>.COM</td>
+              <td>1 Year</td>
+              <td>$9.00 USD</td>
+              <td>Transfer Price No</td>
+            </tr>
+            <tr class="table-domain-second-row">
+              <td>.NET</td>
+              <td>1 Year</td>
+              <td>dollar9.00 USD</td>
+              <td>Transfer Price No</td>
+            </tr>
+          </table>
+        </div>
       </div>
 
-      <div class="packages">
-        <div class="basic-package">
-          <table>
-            <caption>BASIC PACKAGE</caption>
-            <tr>
-              <td>Disk Space (GB)</td>
-              <td>50</td>
-            </tr>
-            <tr>
-              <td>Subdommains</td>
-              <td>50</td>
-            </tr>
-            <tr>
-              <td>Transfer (GB)</td>
-              <td>50</td>
-            </tr>
-            <tr>
-              <td>Data bases</td>
-              <td>1</td>
-            </tr>
-            <tr>
-              <td>Dashboards</td>
-              <td>1</td>
-            </tr>
-            <tr>
-              <td>Control Panel & FTP</td>
-            </tr>
-            <tr>
-              <td>Free Support</td>
-            </tr>
-          </table>
+      <div class="packages-container">
+        <div class="background-packages"></div>
+        <div class="packages width-limiter">
+          <div class="basic-package packages-common-style">
+            <div class = "package-icon">
+              <i class="fas fa-anchor package-icon"></i>
+            </div>
+            <table>
+              <caption>BASIC PACKAGE</caption>
+              <tr>
+                <td>Disk Space (GB)</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>Subdommains</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>Transfer (GB)</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>Data bases</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Dashboards</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Control Panel & FTP</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Free Support</td>
+                <td></td>
+              </tr>
+            </table>
+            <div class="price basic-price-color">
+              <span class="price-value">15</span><span class="price-month">/Mo</span>
+            </div>
+            <form>
+              <button class="select-package">SELECT A PLAN</button>
+            </form>
+          </div>
+
+          <div class="normal-package packages-common-style">
+            <div class = "package-icon">
+              <i class="fas fa-anchor package-icon"></i>
+            </div>
+            <table>
+              <caption>NORMAL PACKAGE</caption>
+              <tr>
+                <td>Disk Space (GB)</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>Subdommains</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>Transfer (GB)</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>Data bases</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Dashboards</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Control Panel & FTP</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Free Support</td>
+                <td></td>
+              </tr>
+            </table>
+            <div class="price normal-price-color">
+              <span class="price-value">30</span><span class="price-month">/Mo</span>
+            </div>
+            <form>
+              <button class="select-package">SELECT A PLAN</button>
+            </form>
+          </div>
+
+          <div class="big-package packages-common-style">
+            <div class = "package-icon">
+              <i class="fas fa-anchor package-icon"></i>
+            </div>
+            <table>
+              <caption>BIG PACKAGE</caption>
+              <tr>
+                <td>Disk Space (GB)</td>
+                <td>150</td>
+              </tr>
+              <tr>
+                <td>Subdommains</td>
+                <td>150</td>
+              </tr>
+              <tr>
+                <td>Transfer (GB)</td>
+                <td>150</td>
+              </tr>
+              <tr>
+                <td>Data bases</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>Dashboards</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>Control Panel & FTP</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Free Support</td>
+                <td></td>
+              </tr>
+            </table>
+            <div class="price big-price-color">
+              <span class="price-value">40</span><span class="price-month">/Mo</span>
+            </div>
+            <form>
+              <button class="select-package">SELECT A PLAN</button>
+            </form>
+          </div>
+
+          <div class="biggest-package packages-common-style">
+            <div class = "package-icon">
+              <i class="fas fa-anchor package-icon"></i>
+            </div>
+            <table>
+              <caption>BIGGEST PACKAGE</caption>
+              <tr>
+                <td>Disk Space (GB)</td>
+                <td>250</td>
+              </tr>
+              <tr>
+                <td>Subdommains</td>
+                <td>250</td>
+              </tr>
+              <tr>
+                <td>Transfer (GB)</td>
+                <td>250</td>
+              </tr>
+              <tr>
+                <td>Data bases</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>Dashboards</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>Control Panel & FTP</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Free Support</td>
+                <td></td>
+              </tr>
+            </table>
+            <div class="price biggest-price-color">
+              <span class="price-value">70</span><span class="price-month">/Mo</span>
+            </div>
+            <form>
+              <button class="select-package">SELECT A PLAN</button>
+            </form>
+          </div>
         </div>
-        <div class="normal-package">
-          <table>
-            <caption>NORMAL PACKAGE</caption>
-            <tr>
-              <td>Disk Space (GB)</td>
-              <td>50</td>
-            </tr>
-            <tr>
-              <td>Subdommains</td>
-              <td>50</td>
-            </tr>
-            <tr>
-              <td>Transfer (GB)</td>
-              <td>50</td>
-            </tr>
-            <tr>
-              <td>Data bases</td>
-              <td>1</td>
-            </tr>
-            <tr>
-              <td>Dashboards</td>
-              <td>1</td>
-            </tr>
-            <tr>
-              <td>Control Panel & FTP</td>
-            </tr>
-            <tr>
-              <td>Free Support</td>
-            </tr>
-          </table>
-        </div>
-        <div class="big-package"></div>
-        <div class="biggest-package"></div>
       </div>
+
     </main>
-        
   </div>
-  
-  <footer>
-      <div class="logo-nav-footer width-limiter">
-          <img src="./images/header/logo.png" alt="logo" class="logo-footer" />
-          <nav class="navigation-footer">
-            <ul>
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">ABOUT US</a></li>
-              <li><a href="#">BLOG</a></li>
-              <li><a href="#">POLICY</a></li>
-              <li><a href="#">CONTACT</a></li>
-            </ul>
-          </nav>
-        </div>
 
-        <div class="footer-info width-limiter place-center">
-          <div class="text-info">
-            <p>Lorem ipsum dolor sit amet, consecteteeseurı
-              adipiscing elit. Donec mollis commodoeesene
-              que, non commodo risus volutpat vel.
-            </p>
-            <p>Design by <span class="designer-name">Mert Can Eyriyer.</span></p>
-          </div>
-          <hr>
-          <div class="options">
-            <nav>
-              <ul class="foot-nav">
-                <li><a href="#"><i class="fas fa-chevron-right footer-bullet"></i>Support</a></li>
-                <li><a href="#"><i class="fas fa-chevron-right footer-bullet"></i>Account</a></li>
-                <li><a href="#"><i class="fas fa-chevron-right footer-bullet"></i>Product Catalog</a></li>
-                <li><a href="#"><i class="fas fa-chevron-right footer-bullet"></i>Shortcodes</a></li>
-              </ul>
-            </nav>
-            <nav>
-              <ul class="foot-nav">
-                <li><a href="#"><i class="fas fa-chevron-right footer-bullet"></i>Site Map</a></li>
-                <li><a href="#"><i class="fas fa-chevron-right footer-bullet"></i>Whois Search</a></li>
-                <li><a href="#"><i class="fas fa-chevron-right footer-bullet"></i>Web Mail</a></li>
-                <li><a href="#"><i class="fas fa-chevron-right footer-bullet"></i>Find Domain</a></li>
-              </ul>
-            </nav>
-          </div>
-          <hr>
-          <div class="contacts">
-            <ul>
-              <li><a href="tel: +000000000000"><i class="fas fa-phone"></i> 0000-0000-0000</a></li>
-              <li><a href="meilto: informationteam@ghosthost.com"><i class="fas fa-envelope"></i> informationteam@ghosthost.com</a></li>
-              <p>Lorem Ipsum Street, Lorem Avenue, 
-                  Lorem Ipsum</p>
-            </ul>
-          </div>
-        </div>
+  <footer>
+    <div class="logo-nav-footer width-limiter">
+      <img src="./images/footer/logo-footer.png" alt="logo" class="logo-footer" />
+      <nav class="navigation-footer">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">POLICY</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer-info width-limiter place-center">
+      <div class="text-info">
+        <p>Lorem ipsum dolor sit amet, consecteteeseurı
+          adipiscing elit. Donec mollis commodoeesene
+          que, non commodo risus volutpat vel.
+        </p>
+        <p>Design by <span class="designer-name">Mert Can Eyriyer.</span></p>
       </div>
+      <hr>
+      <div class="options">
+        <nav>
+          <ul class="foot-nav">
+            <li><a href="#"><i class="fas fa-chevron-right footer-bullet"></i>Support</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right footer-bullet"></i>Account</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right footer-bullet"></i>Product Catalog</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right footer-bullet"></i>Shortcodes</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <ul class="foot-nav">
+            <li><a href="#"><i class="fas fa-chevron-right footer-bullet"></i>Site Map</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right footer-bullet"></i>Whois Search</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right footer-bullet"></i>Web Mail</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right footer-bullet"></i>Find Domain</a></li>
+          </ul>
+        </nav>
+      </div>
+      <hr>
+      <div class="contacts">
+        <ul>
+          <li><a href="tel: +000000000000"><i class="fas fa-phone"></i> 0000-0000-0000</a></li>
+          <li><a href="meilto: informationteam@ghosthost.com"><i class="fas fa-envelope"></i>
+              informationteam@ghosthost.com</a></li>
+          <p>Lorem Ipsum Street, Lorem Avenue,
+            Lorem Ipsum</p>
+        </ul>
+      </div>
+    </div>
+    </div>
   </footer>
 
 </body>
+
 </html>

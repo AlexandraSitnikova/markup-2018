@@ -1,9 +1,11 @@
-@font-face {
-    font-family: 'Lato-Medium';
-    src: url(../fonts/Lato-Medium.ttf) format("truetype");
-    font-weight: normal;
-    font-style: normal;
+
+
+i {
+font-family: fontawesome;
+font-style: initial;
 }
+
+
 
 .buy-domain {
     max-width: 1000px;
@@ -58,24 +60,23 @@
     color: #d9d9d9;
 }
 
-
-.table-domain {
-    width: 100%;
-    margin: 40px auto 80px;
+.table-domain-container {
     border: 1px solid #d9d9d9;
-    table-layout: fixed;
-    border-spacing: 8px;
+    margin: 40px auto 60px;
 }
 
-.table-domain tr {
-    position: relative;
+.table-domain {
+    padding: 18px;
+    width: 100%;
+    table-layout: fixed;
 }
 
 .table-domain td {
+    position: relative;
     text-align: center;
-    padding: 10px;
-    border-bottom: 3px solid red;
-    border-right: 3px solid red;
+    padding: 30px;
+    border-bottom: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
 }
 
 .table-domain td:last-child {
@@ -86,21 +87,146 @@
     border-bottom: 0px;
 }
 
-.table-domain-second-row td::after {
+.table-domain-second-row td:not(:first-child)::after {
     content: "";
     position: absolute;
-    width: 30px;
-    height: 30px;
-    background: white;
-    left: -7%;
-    top: -15%;
+    width: 20px;
+    height: 20px;
+    background:white;
+    left: -11px;
+    top: -12px;
     border-radius: 50%;
 }
 
 
-.packages {
+.background-packages {
+    width: 100%;
+    height: 270px;
+    background-position: 0% 37%;
+    background-size: 100%;
     background-image: url(../images/main/packagesPhoto.jpg);
-    background-size: 50% auto;
-
+    position: absolute;
+    top: 0;
+    z-index: -1;
 }
+
+.packages-container {
+    position: relative;
+}
+
+.packages {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.basic-package, .basic-package button {
+    border-top: 5px solid #f9d423;
+}
+
+.basic-package td:last-child {
+    color: #f9d423;
+}
+
+.normal-package {
+    border-top: 5px solid #7f8c8d;
+}
+
+.normal-package td:last-child {
+    color: #7f8c8d;
+}
+
+.big-package {
+    border-top: 5px solid #f85f40;
+}
+
+.big-package td:last-child {
+    color: #f85f40;
+}
+
+.biggest-package {
+    border-top: 5px solid #1abc9c;
+}
+
+.biggest-package td:last-child {
+    color: #1abc9c;
+}
+
+.packages-common-style {
+    flex-direction: column;
+    margin: 60px 0;
+    background: white;
+    font-size: 15px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+.packages-common-style td {
+    padding: 5px 0;
+}
+
+.packages-common-style td:first-child {
+  font-family: 'Lato-Light';
+  color: #7f8c8d;
+}
+
+.packages-common-style td:last-child {
+    font-family: 'Lato-Semibold';
+}
+
+.packages-common-style caption {
+    padding: 12px 0;
+    font-family: 'Lato-Bold';
+    font-size: 15px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.packages-common-style table {
+    margin: 0 20px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.price {
+    margin: 25px 0;
+    text-align: center;
+}
+
+.price-value {
+    position: relative;
+    font-family: 'Lato-Bold';
+    font-size: 20px;
+}
+
+.price-value::before {
+    font-family: 'Lato-Heavy';
+    content: "$";
+    font-size: 12px;
+    position: absolute;
+    top: 3px;
+    left: -8px;
+}
+
+.price-month {
+    font-family: 'Lato-Regular';
+    font-size: 12px;
+    color: #9f9f9f;
+}
+
+.packages-common-style button {
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+    background: white;
+    margin: 0 auto;
+}
+
+.circle-element {
+    margin: 0 auto;
+}
+
+.package-icon {
+    font-size: 20px;
+}
+
+
 
