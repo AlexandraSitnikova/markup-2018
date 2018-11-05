@@ -32,6 +32,10 @@
   .account-button {
     height: 100%;
   }
+
+  .account-button:hover {
+    font-weight: bold;
+  }
   
   .account-stripe a {
     color: #f8eeee;

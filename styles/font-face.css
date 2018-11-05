@@ -53,3 +53,10 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Georgia-Italic';
+    src: url(../fonts/Georgia-Italic.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}

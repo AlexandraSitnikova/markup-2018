@@ -130,6 +130,9 @@
     margin-bottom: 20px;
 }
 
+.select-package:hover {
+    font-size: 15px;
+}
 
 .package-icon {
     position: relative;
@@ -209,6 +212,10 @@
 }
 
 @media (max-width: 830px) {
+    .packages {
+        flex-direction: column;
+    }
+    
     .packages-common-style {
         margin: 10px auto;
     }

@@ -84,6 +84,7 @@
     color: #1f89ba;
 }
 
+
 @media (max-width: 830px) {
     .about-us {
         margin: 0 auto;
@@ -92,5 +93,6 @@
 
     .authors-container {
         margin: 0 auto;
+        flex-direction: column;
     }
   }

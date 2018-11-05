@@ -9,7 +9,6 @@ footer {
 footer a {
     color: #646464;
     text-decoration: none;
-    font-family: 'Lato-Medium', sans-serif;
 }
 
 .logo-nav-footer {
@@ -19,6 +18,10 @@ footer a {
     height: 60px;
     margin: 5px auto;
     border-bottom: 1px solid #a7a5a58f;
+}
+
+.logo-nav-footer a {
+    font-family: 'Lato-Medium', sans-serif;
 }
 
 .logo-footer {
@@ -52,6 +55,7 @@ footer a {
 .footer-info {
     margin: 23px auto;
     flex-wrap: wrap;
+    line-height: 20px;
 }
 
 .footer-info hr {
@@ -88,6 +92,10 @@ footer a {
 }
 
 .foot-nav li:hover{
+    color: rgb(255, 255, 255);
+}
+
+.contacts a:hover {
     color: rgb(255, 255, 255);
 }
 
